@@ -1,8 +1,9 @@
 import Notification from '../Notification/Notification';
+import s from './Statistics.module.css';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <>
-    <h2>Statistics</h2>
+    <h2 className={s.statistics}>Statistics</h2>
     {total === 0 ? (
       <Notification message="No feedback given" />
     ) : (
